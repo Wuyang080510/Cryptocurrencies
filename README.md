@@ -9,7 +9,7 @@ In this analysis, I used PCA to reduce the principal components and the K-Means 
 ## Data Preprocessing 
 The raw DataFrame has 1252 records with 6 columns. Each record represents a unique cryptocurrency. Among these cryptocurrencies, 1144 cryptocurrencies are being traded. Cryptocurrencies that were not actively traded are not good options for investment. So these cryptocurrencies are removed. Next, I checked the null values in the DataFrame and removed these records. The CoinName column is not useful in the unsupervised learning model. This column was dropped as well. This leaves a crypto_df with 532 rows and 4 columns. 
 
-![crypto_df head](https://github.com/Wuyang080510/Cryptocurrencies/commit/0603d8f8c0014c86d568aa3ba5c0acdb334acdbc)
+![crypto_df head](https://github.com/Wuyang080510/Cryptocurrencies/blob/main/image/crypto_df.png)
 
 To perform unsupervised machine learning algorithm with this dataset, I have to transfer all the data in the DataFrame into numerical values. I used pd.get_dummies() to achieve this goal. Next, I scaled the data to bring all the features to the same level of magnitude.  
 
